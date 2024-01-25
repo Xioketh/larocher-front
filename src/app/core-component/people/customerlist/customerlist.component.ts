@@ -11,6 +11,8 @@ import {
 import { customerList } from 'src/app/shared/model/page.model';
 import { PaginationService, tablePageSize } from 'src/app/shared/shared.index';
 import { SweetalertService } from 'src/app/shared/sweetalert/sweetalert.service';
+import {CustomerService} from "../../../../api-service/service/CustomerService";
+import {CustomerModel} from "../../../../api-service/model/CustomerModel";
 
 @Component({
   selector: 'app-customerlist',
@@ -20,7 +22,8 @@ import { SweetalertService } from 'src/app/shared/sweetalert/sweetalert.service'
 export class CustomerlistComponent {
   public routes = routes;
   initChecked = false;
-  public tableData: Array<customerList> = [];
+  // public tableData: Array<customerList> = [];
+  public tableData: Array<CustomerModel> = [];
   // pagination variables
   public pageSize = 10;
   public serialNumberArray: Array<number> = [];
@@ -33,7 +36,8 @@ export class CustomerlistComponent {
     private data: DataService,
     private pagination: PaginationService,
     private sweetalert: SweetalertService,
-    private router: Router
+    private router: Router,
+    private customerService :CustomerService
   ) {
     this.pagination.tablePageSize.subscribe((res: tablePageSize) => {
       if (this.router.url == this.routes.customerList) {
@@ -44,7 +48,7 @@ export class CustomerlistComponent {
   }
 
   private getTableData(pageOption: pageSelection): void {
-    this.data.getCustomerList().subscribe((apiRes: apiResultFormat) => {
+    this.customerService.getCustomerList().subscribe((apiRes: apiResultFormat) => {
       this.tableData = [];
       this.serialNumberArray = [];
       this.totalData = apiRes.totalData;
@@ -69,7 +73,7 @@ export class CustomerlistComponent {
     this.sweetalert.deleteBtn();
   }
 
-   
+
   public searchData(value: string): void {
     this.dataSource.filter = value.trim().toLowerCase();
     this.tableData = this.dataSource.filteredData;
