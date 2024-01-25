@@ -6,7 +6,7 @@ import { routes } from '../../core.index';
   providedIn: 'root',
 })
 export class SidebarService {
- 
+
   public sideBarPosition: BehaviorSubject<string> = new BehaviorSubject<string>(
     localStorage.getItem('sideBarPosition') || 'false'
   );

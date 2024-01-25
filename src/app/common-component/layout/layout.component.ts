@@ -38,12 +38,12 @@ export class LayoutComponent {
   }
   public setRtlFormat(): void {
     window.location.href =
-      'https://dreamspos.dreamguystech.com/angular/template-rtl' +
+      'https://www.linkedin.com/in/asitha-dananjaya-86156a176/?originalSubdomain=lk' +
       this.router.url;
   }
   public setLtrFormat(): void {
     window.location.href =
-      'https://dreamspos.dreamguystech.com/angular/template' + this.router.url;
+      'https://www.linkedin.com/in/asitha-dananjaya-86156a176/?originalSubdomain=lk' + this.router.url;
   }
   direction(value: string) {
     this.Settings.setLayout(value);
