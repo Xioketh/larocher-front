@@ -960,7 +960,7 @@ export class SidebarService {
       ],
     },
   ];
-    public sidebarData2 = [
+      public sidebarData2 = [
     {
       tittle: 'Main Menu',
       hasSubRoute: true,
