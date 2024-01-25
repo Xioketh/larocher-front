@@ -56,34 +56,7 @@ export class SidebarService {
           showSubRoute: false,
           icon: 'grid',
           subMenus: [],
-        },
-        {
-          menuValue: 'Application',
-          route: routes.application,
-          hasSubRoute: true,
-          showSubRoute: false,
-          icon: 'smartphone',
-          subMenus: [
-            {
-              menuValue: 'Chat',
-              route: routes.chat,
-            },
-            {
-              menuValue: 'Calendar',
-              hasSubRoute: false,
-              showSubRoute: false,
-              route: routes.calendar,
-              subRoutes: [],
-            },
-            {
-              menuValue: 'Email',
-              hasSubRoute: false,
-              showSubRoute: false,
-              route: routes.email,
-              subRoutes: [],
-            },
-          ],
-        },
+        }
       ],
     },
     {
@@ -199,14 +172,7 @@ export class SidebarService {
           icon: 'save',
           subMenus: [],
         },
-        {
-          menuValue: 'POS',
-          route: routes.pos,
-          hasSubRoute: false,
-          showSubRoute: false,
-          icon: 'hard-drive',
-          subMenus: [],
-        },
+
         {
           menuValue: 'Transfer',
           route: routes.transfer,
@@ -960,6 +926,9 @@ export class SidebarService {
       ],
     },
   ];
+
+
+  // ============================================= sidebarData2 ======================================================
       public sidebarData2 = [
     {
       tittle: 'Main Menu',
@@ -1061,13 +1030,7 @@ export class SidebarService {
               route: routes.salesList,
               subRoutes: [],
             },
-            {
-              tittle: 'POS',
-              hasSubRoute: false,
-              showSubRoute: false,
-              route: routes.pos,
-              subRoutes: [],
-            },
+
             {
               tittle: 'New Sales',
               hasSubRoute: false,
@@ -1744,37 +1707,6 @@ export class SidebarService {
               subRoutes: [],
             },
           ],
-        },
-      ],
-    },
-
-    {
-      tittle: 'Application',
-      hasSubRoute: true,
-      icon: 'assets/img/icons/product.svg',
-      showSubRoute: false,
-      route: routes.application,
-      subRoutes: [
-        {
-          tittle: 'Chat',
-          hasSubRoute: false,
-          showSubRoute: false,
-          route: routes.chat,
-          subRoutes: [],
-        },
-        {
-          tittle: 'Calendar',
-          hasSubRoute: false,
-          showSubRoute: false,
-          route: routes.calendar,
-          subRoutes: [],
-        },
-        {
-          tittle: 'Email',
-          hasSubRoute: false,
-          showSubRoute: false,
-          route: routes.email,
-          subRoutes: [],
         },
       ],
     },

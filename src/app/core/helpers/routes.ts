@@ -89,9 +89,6 @@ export class routes {
   public static get table(): string {
     return this.core + '/table';
   }
-  public static get application(): string {
-    return this.core + '/application';
-  }
   public static get report(): string {
     return this.core + '/report';
   }
@@ -158,9 +155,6 @@ export class routes {
   }
   public static get salesList(): string {
     return this.sales + '/sales-list';
-  }
-  public static get pos(): string {
-    return this.sales + '/pos';
   }
   public static get salesReturnLists(): string {
     return this.sales + '/sales-return-lists';
@@ -434,15 +428,7 @@ export class routes {
   public static get dataTable(): string {
     return this.table + '/data-basic';
   }
-  public static get chat(): string {
-    return this.application + '/chat';
-  }
-  public static get calendar(): string {
-    return this.application + '/calendar';
-  }
-  public static get email(): string {
-    return this.application + '/email';
-  }
+
   public static get purchaseOrderReport(): string {
     return this.report + '/purchase-order-report';
   }

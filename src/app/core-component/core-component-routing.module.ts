@@ -98,13 +98,7 @@ const routes: Routes = [
         loadChildren: () =>
           import('./table/table.module').then((m) => m.TableModule),
       },
-      {
-        path: 'application',
-        loadChildren: () =>
-          import('./application/application.module').then(
-            (m) => m.ApplicationModule
-          ),
-      },
+
       {
         path: 'report',
         loadChildren: () =>

@@ -62,9 +62,7 @@ export class CoreComponentComponent {
         localStorage.removeItem('isMobileSidebar');
         this.mobileSidebar = false;
       }
-      if (this.page === 'pos') {
-        localStorage.removeItem('sideBarPosition');
-      }
+
     });
     this.sidebar.sideBarPosition.subscribe((res: string) => {
       if (res == 'true' && this.page !== 'pos') {
@@ -97,9 +95,7 @@ export class CoreComponentComponent {
       this.settings.setLayout('1');
       // this.miniSidebar = false;
     }
-    if (this.page === 'pos') {
-      this.miniSidebar = false;
-    }
+
     // console.log(window.innerWidth);
     if (window.innerWidth > 990 && localStorage.getItem('isMobileSidebar')) {
       localStorage.removeItem('isMobileSidebar');
