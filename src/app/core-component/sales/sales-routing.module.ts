@@ -14,10 +14,6 @@ const routes: Routes = [
           import('./saleslist/saleslist.module').then((m) => m.SaleslistModule),
       },
       {
-        path: 'pos',
-        loadChildren: () => import('./pos/pos.module').then((m) => m.PosModule),
-      },
-      {
         path: 'sales-return-lists',
         loadChildren: () =>
           import('./salesreturnlists/salesreturnlists.module').then(
