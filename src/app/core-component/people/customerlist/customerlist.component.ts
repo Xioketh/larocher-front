@@ -11,8 +11,9 @@ import {
 import { customerList } from 'src/app/shared/model/page.model';
 import { PaginationService, tablePageSize } from 'src/app/shared/shared.index';
 import { SweetalertService } from 'src/app/shared/sweetalert/sweetalert.service';
-import {CustomerService} from "../../../../api-service/service/CustomerService";
-import {CustomerModel} from "../../../../api-service/model/CustomerModel";
+import {CustomerModel} from "src/api-service/model/CustomerModel";
+import {CustomerService} from "src/api-service/service/CustomerService";
+
 
 @Component({
   selector: 'app-customerlist',
