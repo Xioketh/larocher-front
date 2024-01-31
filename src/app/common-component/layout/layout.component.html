@@ -8,17 +8,17 @@
         <img src="assets/img/icons/sidebar-icon-01.svg" class="feather-five" alt="" />
       </a>
     </li>
-    <li class="sidebar-icons">
-      <a (click)="showNavigation = !showNavigation; showPreview = false" class="navigation-add" data-bs-toggle="tooltip"
-        data-bs-placement="left" data-bs-original-title="Tooltip on left">
-        <img src="assets/img/icons/sidebar-icon-02.svg" class="feather-five" alt="" />
-      </a>
-    </li>
-    <li class="sidebar-icons">
-      <a href="dashboard">
-        <img src="assets/img/icons/sidebar-icon-03.svg" class="feather-five" alt="" />
-      </a>
-    </li>
+<!--    <li class="sidebar-icons">-->
+<!--      <a (click)="showNavigation = !showNavigation; showPreview = false" class="navigation-add" data-bs-toggle="tooltip"-->
+<!--        data-bs-placement="left" data-bs-original-title="Tooltip on left">-->
+<!--        <img src="assets/img/icons/sidebar-icon-02.svg" class="feather-five" alt="" />-->
+<!--      </a>-->
+<!--    </li>-->
+<!--    <li class="sidebar-icons">-->
+<!--      <a href="dashboard">-->
+<!--        <img src="assets/img/icons/sidebar-icon-03.svg" class="feather-five" alt="" />-->
+<!--      </a>-->
+<!--    </li>-->
   </ul>
 </div>
 
@@ -40,167 +40,167 @@
               class="far fa-moon me-2"></i> Dark</span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--      <div class="row">-->
+<!--        <div class="col-xl-6 ere">-->
+<!--          <div class="layout-wrap">-->
+<!--            <div class="d-flex align-items-center">-->
+<!--              <div class="status-toggle d-flex align-items-center me-2">-->
 
-                <label for="1" class="checktoggle active"><a class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">LTR</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-ltr.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div hidden="hidden" class="layout-wrap">
-            <div  class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--                <label for="1" class="checktoggle active"><a class="layout-link">checkbox</a>-->
+<!--                </label>-->
+<!--              </div>-->
+<!--              <span class="status-text">LTR</span>-->
+<!--            </div>-->
+<!--            <div class="layout-img">-->
+<!--              <img class="img-fliud" src="assets/img/layout-ltr.png" alt="layout" />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-xl-6 ere">-->
+<!--          <div hidden="hidden" class="layout-wrap">-->
+<!--            <div  class="d-flex align-items-center">-->
+<!--              <div class="status-toggle d-flex align-items-center me-2">-->
 
-                <label  for="1" class="checktoggle"><a (click)="setRtlFormat()" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">RTL</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-rtl.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--                <label  for="1" class="checktoggle"><a (click)="setRtlFormat()" class="layout-link">checkbox</a>-->
+<!--                </label>-->
+<!--              </div>-->
+<!--              <span class="status-text">RTL</span>-->
+<!--            </div>-->
+<!--            <div class="layout-img">-->
+<!--              <img class="img-fliud" src="assets/img/layout-rtl.png" alt="layout" />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="row">-->
+<!--        <div class="col-xl-6 ere">-->
+<!--          <div class="layout-wrap">-->
+<!--            <div class="d-flex align-items-center">-->
+<!--              <div class="status-toggle d-flex align-items-center me-2">-->
 
-                <label [class.active]="changeLayout === '4'" for="4" class="checktoggle"><a
-                    (click)="direction('4')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Boxed</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-04.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--                <label [class.active]="changeLayout === '4'" for="4" class="checktoggle"><a-->
+<!--                    (click)="direction('4')" class="layout-link">checkbox</a>-->
+<!--                </label>-->
+<!--              </div>-->
+<!--              <span class="status-text">Boxed</span>-->
+<!--            </div>-->
+<!--            <div class="layout-img">-->
+<!--              <img class="img-fliud" src="assets/img/layout-04.png" alt="layout" />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-xl-6 ere">-->
+<!--          <div class="layout-wrap">-->
+<!--            <div class="d-flex align-items-center">-->
+<!--              <div class="status-toggle d-flex align-items-center me-2">-->
 
-                <label [class.active]="changeLayout === '5'" for="3" class="checktoggle"><a
-                    (click)="direction('5')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Collapsed</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-      </div>
+<!--                <label [class.active]="changeLayout === '5'" for="3" class="checktoggle"><a-->
+<!--                    (click)="direction('5')" class="layout-link">checkbox</a>-->
+<!--                </label>-->
+<!--              </div>-->
+<!--              <span class="status-text">Collapsed</span>-->
+<!--            </div>-->
+<!--            <div class="layout-img">-->
+<!--              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </div>
 
-<div class="sidebar-settings nav-toggle" [ngClass]="{ 'show-settings': showNavigation }">
-  <div class="sidebar-content sticky-sidebar-one">
-    <div class="sidebar-header">
-      <h5>Navigation Settings</h5>
-      <a (click)="showNavigation = false" class="sidebar-close" href="#"><img src="assets/img/icons/close-icon.svg"
-          alt="" /></a>
-    </div>
-    <div class="sidebar-body">
-      <h6 class="theme-title">Navigation Type</h6>
-      <div class="row">
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--<div class="sidebar-settings nav-toggle" [ngClass]="{ 'show-settings': showNavigation }">-->
+<!--&lt;!&ndash;  <div class="sidebar-content sticky-sidebar-one">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="sidebar-header">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h5>Navigation Settings</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;      <a (click)="showNavigation = false" class="sidebar-close" href="#"><img src="assets/img/icons/close-icon.svg"&ndash;&gt;-->
+<!--&lt;!&ndash;          alt="" /></a>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="sidebar-body">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h6 class="theme-title">Navigation Type</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-xl-6 ere">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="layout-wrap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="status-toggle d-flex align-items-center me-2">&ndash;&gt;-->
 
-                <label [class.active]="changeLayout === '1'" for="1" class="checktoggle"><a
-                    (click)="direction('1')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Vertical</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-03.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--&lt;!&ndash;                <label [class.active]="changeLayout === '1'" for="1" class="checktoggle"><a&ndash;&gt;-->
+<!--&lt;!&ndash;                    (click)="direction('1')" class="layout-link">checkbox</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span class="status-text">Vertical</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="layout-img">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img class="img-fliud" src="assets/img/layout-03.png" alt="layout" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-xl-6 ere">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="layout-wrap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="status-toggle d-flex align-items-center me-2">&ndash;&gt;-->
 
-                <label for="2" class="checktoggle" [class.active]="changeLayout === '2'"><a
-                    (click)="direction('2')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Horizontal</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--&lt;!&ndash;                <label for="2" class="checktoggle" [class.active]="changeLayout === '2'"><a&ndash;&gt;-->
+<!--&lt;!&ndash;                    (click)="direction('2')" class="layout-link">checkbox</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span class="status-text">Horizontal</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="layout-img">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-xl-6 ere">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="layout-wrap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="status-toggle d-flex align-items-center me-2">&ndash;&gt;-->
 
-                <label [class.active]="changeLayout === '5'" for="3" class="checktoggle"><a
-                    (click)="direction('5')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Collapsed</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--&lt;!&ndash;                <label [class.active]="changeLayout === '5'" for="3" class="checktoggle"><a&ndash;&gt;-->
+<!--&lt;!&ndash;                    (click)="direction('5')" class="layout-link">checkbox</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span class="status-text">Collapsed</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="layout-img">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img class="img-fliud" src="assets/img/layout-01.png" alt="layout" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-xl-6 ere">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="layout-wrap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="status-toggle d-flex align-items-center me-2">&ndash;&gt;-->
 
-                <label [class.active]="changeLayout === '4'" for="3" class="checktoggle"><a
-                    (click)="direction('4')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Modern</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-04.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 ere">
-          <div class="layout-wrap">
-            <div class="d-flex align-items-center">
-              <div class="status-toggle d-flex align-items-center me-2">
+<!--&lt;!&ndash;                <label [class.active]="changeLayout === '4'" for="3" class="checktoggle"><a&ndash;&gt;-->
+<!--&lt;!&ndash;                    (click)="direction('4')" class="layout-link">checkbox</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span class="status-text">Modern</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="layout-img">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img class="img-fliud" src="assets/img/layout-04.png" alt="layout" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-xl-6 ere">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="layout-wrap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="status-toggle d-flex align-items-center me-2">&ndash;&gt;-->
 
-                <label [class.active]="changeLayout === '3'" for="3" class="checktoggle"><a
-                    (click)="direction('3')" class="layout-link">checkbox</a>
-                </label>
-              </div>
-              <span class="status-text">Boxed</span>
-            </div>
-            <div class="layout-img">
-              <img class="img-fliud" src="assets/img/layout-03.png" alt="layout" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!--&lt;!&ndash;                <label [class.active]="changeLayout === '3'" for="3" class="checktoggle"><a&ndash;&gt;-->
+<!--&lt;!&ndash;                    (click)="direction('3')" class="layout-link">checkbox</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span class="status-text">Boxed</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="layout-img">&ndash;&gt;-->
+<!--&lt;!&ndash;              <img class="img-fliud" src="assets/img/layout-03.png" alt="layout" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--</div>-->

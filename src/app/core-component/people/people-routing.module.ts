@@ -9,14 +9,14 @@ const routes: Routes = [
       {
         path: 'customer-list',
         loadChildren: () =>
-          import('./customerlist/customerlist.module').then(
+          import('../../view/customers/customerlist/customerlist.module').then(
             (m) => m.CustomerlistModule
           ),
       },
       {
         path: 'add-customer',
         loadChildren: () =>
-          import('./addcustomer/addcustomer.module').then(
+          import('../../view/customers/addcustomer/addcustomer.module').then(
             (m) => m.AddcustomerModule
           ),
       },

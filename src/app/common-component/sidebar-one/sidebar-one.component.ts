@@ -22,6 +22,7 @@ export class SidebarOneComponent{
     private router: Router,
     private activeRouter:ActivatedRoute
   ) {
+    console.log('one::1')
     router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationEnd) {
         this.getRoutes(event);
@@ -29,6 +30,7 @@ export class SidebarOneComponent{
     });
     this.getRoutes(this.router);
     this.side_bar_data = this.sidebar.sidebarData1;
+    console.log(this.side_bar_data)
   }
 
   private getRoutes(route: url): void {
