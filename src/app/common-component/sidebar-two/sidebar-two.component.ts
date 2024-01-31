@@ -13,6 +13,7 @@ export class SidebarTwoComponent {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public sidebarData: Array<any> = [];
   constructor(private sidebar: SidebarService, private router: Router) {
+    console.log('tow::2')
     this.activePath = this.router.url.split('/')[1];
     this.router.events.subscribe((data: RouterEvent) => {
       if (data instanceof NavigationStart) {

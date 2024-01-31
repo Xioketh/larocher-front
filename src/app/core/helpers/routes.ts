@@ -30,9 +30,6 @@ export class routes {
   public static get errorPage500(): string {
     return this.errorPages + '/error500';
   }
-  // error pages routes *ends*
-
-  // core pages routes
 
   public static get core(): string {
     return this.baseUrl;
@@ -40,15 +37,42 @@ export class routes {
   public static get dashboard(): string {
     return this.core + '/dashboard';
   }
+
+  public static get customerList(): string {
+    return this.customer + '/customer-list';
+  }
+
+  public static get addCustomer(): string {
+    return this.customer + '/add-customer';
+  }
+
+  public static get productList(): string {
+    return this.product + '/product-list';
+  }
+  public static get addProduct(): string {
+    return this.product + '/add-product';
+  }
+
+  public static get customer(): string {
+    return this.core + '/customers';
+  }
+
+  public static get product(): string {
+    return this.core + '/product';
+  }
+
+
+
+  // ---------------------previous-----------------------------------
+
   public static get components(): string {
     return this.core + '/components';
   }
   public static get blankPage(): string {
     return this.core + '/blank-page';
   }
-  public static get product(): string {
-    return this.core + '/product';
-  }
+
+
   public static get sales(): string {
     return this.core + '/sales';
   }
@@ -108,12 +132,7 @@ export class routes {
 
   // core pages child routes
 
-  public static get productList(): string {
-    return this.product + '/product-list';
-  }
-  public static get addProduct(): string {
-    return this.product + '/add-product';
-  }
+
   public static get categoryList(): string {
     return this.product + '/category-list';
   }
@@ -242,12 +261,7 @@ export class routes {
     return this.return + '/edit-purchase-return';
   }
 
-  public static get customerList(): string {
-    return this.people + '/customer-list';
-  }
-  public static get addCustomer(): string {
-    return this.people + '/add-customer';
-  }
+
   public static get supplierList(): string {
     return this.people + '/supplier-list';
   }

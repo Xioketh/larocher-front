@@ -25,6 +25,7 @@ export class AppComponent {
       if (event instanceof NavigationStart) {
         // this.settings.setLayout('1')
         const URL = event.url.split('/');
+        console.log(URL)
         this.page = URL[1];
         this.spinner.show();
       }

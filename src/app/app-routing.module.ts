@@ -7,11 +7,18 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'signin',
   },
+  // {
+  //   path: '',
+  //   loadChildren: () =>
+  //     import('./core-component/core-component.module').then(
+  //       (m) => m.CoreComponentModule
+  //     ),
+  // },
   {
     path: '',
     loadChildren: () =>
-      import('./core-component/core-component.module').then(
-        (m) => m.CoreComponentModule
+      import('./view/view.module').then(
+        (m) => m.ViewModule
       ),
   },
   {
